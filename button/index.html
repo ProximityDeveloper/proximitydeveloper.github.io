@@ -1,31 +1,32 @@
-<script type="text/javascript">
+<html><head><script type="text/javascript">
 function add() {
     var num = document.getElementById("mynum").value;
     if(num == '') num = 0;
     document.getElementById("mynum").value = parseInt(num ,10) + 1;
     }
 </script>
-<!DOCTYPE html>
-<html>
-    <head>
+
+
+    
       <!--Import Google Icon Font-->
       <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
       <!--Import materialize.css-->
-      <link type="text/css" rel="stylesheet" href="../css/materialize.min.css"  media="screen,projection"/>
+      <link type="text/css" rel="stylesheet" href="../css/materialize.min.css" media="screen,projection">
 
       <!--Let browser know website is optimized for mobile-->
-      <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
     </head>
 
     <body oncontextmenu="return false">
-        <div id='txt'></div>
+        <div id="txt"></div>
         <form action="" method="post">
-            <input type="text" id='mynum'>
-            <input class="waves-effect waves-light btn" type="button" style="height:50px; width:50px" onclick="add()">
+            <input type="text" id="mynum">
+            <i class="waves-effect waves-light btn waves-input-wrapper"><input class="waves-button-input" type="button" onclick="add()" style="height:50px; width:50px"></i>
         </form>
 
       <!--JavaScript at end of body for optimized loading-->
       <script type="text/javascript" src="../js/materialize.min.js"></script>
-    </body>
-</html>
+    
+
         
+</body></html>
