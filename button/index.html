@@ -1,32 +1,19 @@
-<html><head><script type="text/javascript">
+<html>
+    <head>
+        <script type="text/javascript">
 function add() {
     var num = document.getElementById("mynum").value;
     if(num == '') num = 0;
     document.getElementById("mynum").value = parseInt(num ,10) + 1;
     }
 </script>
-
-
-    
-      <!--Import Google Icon Font-->
-      <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-      <!--Import materialize.css-->
-      <link type="text/css" rel="stylesheet" href="../css/materialize.min.css" media="screen,projection">
-
-      <!--Let browser know website is optimized for mobile-->
-      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://typings.gg/style.css">
+    <link id="theme" rel="stylesheet" href="https://typings.gg/themes/solarizeddark.css">
     </head>
 
     <body oncontextmenu="return false">
         <div id="txt"></div>
-        <form action="" method="post">
-            <input disabled type="text" class="validate" id="mynum">
-            <i class="waves-effect waves-light btn waves-input-wrapper"><input class="waves-button-input" type="button" onclick="add()" style="height:50px; width:50px"></i>
-        </form>
-
-      <!--JavaScript at end of body for optimized loading-->
-      <script type="text/javascript" src="../js/materialize.min.js"></script>
-    
-
-        
-</body></html>
+            <input type="text" spellcheck="false" autocomplete="off" autocorrect="off" autocapitalize="off" id="mynum" disabled>
+            <input type="button" onclick="add()" style="height:50px; width:50px">
+</body>
+</html>
